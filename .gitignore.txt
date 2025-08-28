@@ -1,0 +1,17 @@
+# Build artifacts
+target/
+*.jar
+*.war
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Log files
+logs/
+*.log
+
+# H2 Database file
+data/
