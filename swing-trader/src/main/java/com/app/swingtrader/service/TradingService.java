@@ -22,6 +22,20 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.OutputStreamWriter;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
+
+import java.io.FileReader;
+import java.io.Reader;
+import java.time.Instant;
+import java.time.ZoneOffset;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 @Service
 public class TradingService {
 
@@ -48,6 +62,9 @@ public class TradingService {
 
     @Value("${alpaca.api.base-url}")
     private String baseUrl;
+
+    @Value("${ml.data.path}")
+    private String mlDataPath;
 
     public TradingService(PositionRepository positionRepository) {
         this.positionRepository = positionRepository;
@@ -194,7 +211,7 @@ public class TradingService {
             // Fetch historical data (e.g., last 60 days to have enough data for a 50-day MA)
             List<AlpacaStockBar> bars = fetchHistoricalBars(symbol, 60);
 
-            if (bars.size() < longMaPeriod + 1) {
+            if (bars == null || bars.size() < longMaPeriod + 1) {
                 logger.info("Not enough historical data for " + symbol + ", skipping.");
                 continue;
             }
@@ -318,24 +335,46 @@ public class TradingService {
     }
 
     private List<AlpacaStockBar> fetchHistoricalBars(String symbol, int limit) {
-        logger.info("Fetching " + limit + " daily bars for " + symbol + "...");
-        // This Alpaca endpoint fetches historical data for stocks
-        String url = String.format("%s/v2/stocks/bars?symbols=%s&timeframe=1Day&limit=%d",
-                dataUrl, symbol, limit);
+        logger.info("Reading historical bars for {} from local CSV file...", symbol);
+        List<AlpacaStockBar> bars = new ArrayList<>();
+        String filePath = mlDataPath + "/" + symbol + ".csv";
 
-        HttpEntity<String> entity = new HttpEntity<>(apiHeaders);
+        try (Reader reader = new FileReader(filePath);
+             // Use withHeader() to parse the first row as the header map
+             CSVParser csvParser = CSVParser.parse(reader, CSVFormat.DEFAULT.withHeader())) {
 
-        try {
-            ResponseEntity<AlpacaStockBarsResponse> response = restTemplate.exchange(
-                    url, HttpMethod.GET, entity, AlpacaStockBarsResponse.class);
+            for (CSVRecord csvRecord : csvParser) {
+                // --- THIS IS THE CRITICAL FIX ---
+                // The yfinance CSV file has two junk rows after the main header.
+                // We check the first column and skip the rows if they contain "Ticker" or "Date".
+                if (csvRecord.get(0).equals("Ticker") || csvRecord.get(0).equals("Date")) {
+                    continue; // Skip this junk row
+                }
 
-            if (response.getBody() != null && response.getBody().getBars() != null) {
-                return response.getBody().getBars();
+                // The first column header from the yfinance file is "Price", which contains the date.
+                String dateString = csvRecord.get("Price");
+
+                AlpacaStockBar bar = new AlpacaStockBar(
+                        Instant.parse(dateString + "T00:00:00Z").atZone(ZoneOffset.UTC).toInstant().toString(),
+                        Double.parseDouble(csvRecord.get("Open")),
+                        Double.parseDouble(csvRecord.get("High")),
+                        Double.parseDouble(csvRecord.get("Low")),
+                        Double.parseDouble(csvRecord.get("Close")),
+                        Long.parseLong(csvRecord.get("Volume"))
+                );
+                bars.add(bar);
             }
+
+            if (bars.size() > limit) {
+                return bars.subList(bars.size() - limit, bars.size());
+            } else {
+                return bars;
+            }
+
         } catch (Exception e) {
-            logger.error("Error fetching historical data for " + symbol + ": " + e.getMessage());
+            logger.error("Error reading CSV file for {}: {}", symbol, e.getMessage());
+            return List.of();
         }
-        return List.of(); // Return an empty list on failure
     }
 
     /**
@@ -401,49 +440,36 @@ public class TradingService {
 
     private int getPredictionFromModel(List<AlpacaStockBar> bars) {
         try {
+            // Define the path to the Python project and script
             java.io.File pythonProjectDir = new java.io.File("../swing-trader-ml/");
             String scriptPath = "src/models/predict_model.py";
-            // Define all the features our Python script needs, in order
-            List<String> featureNames = List.of(
-                    "SMA_10", "SMA_50", "RSI_14", "ATRr_14", "OBV", "ADX_14", "DMP_14",
-                    "DMN_14", "BBL_5_2.0", "BBM_5_2.0", "BBU_5_2.0", "BBB_5_2.0",
-                    "BBP_5_2.0", "MACD_12_26_9", "MACDh_12_26_9", "MACDs_12_26_9"
-            );
 
-            // Create a DataFrame-like structure in Java to hold indicator values
-            // This is a simplified approach; more robust solutions exist
-            Map<String, Double> indicators = calculateAllIndicators(bars);
-
-            // Build the command to execute the Python script
-            List<String> command = new ArrayList<>();
-            command.add("py");
-            command.add(scriptPath);
-
-            for (String feature : featureNames) {
-                if(indicators.containsKey(feature)) {
-                    command.add("--" + feature);
-                    command.add(String.format("%.5f", indicators.get(feature)));
-                } else {
-                    logger.error("Missing indicator for feature: {}", feature);
-                    return 0; // Don't trade if data is incomplete
-                }
-            }
+            List<String> command = List.of("py", scriptPath);
 
             // Execute the command
             ProcessBuilder processBuilder = new ProcessBuilder(command);
-            // THIS IS THE CRITICAL PART: Set the working directory for the script
             processBuilder.directory(pythonProjectDir);
             processBuilder.redirectErrorStream(true);
             Process process = processBuilder.start();
 
-            // Read the output from the script (which will be "0" or "1")
+            // Convert the bar history to a JSON string
+            ObjectMapper objectMapper = new ObjectMapper();
+            String barsJson = objectMapper.writeValueAsString(bars);
+
+            // Write the JSON data to the script's standard input
+            try (var writer = new OutputStreamWriter(process.getOutputStream())) {
+                writer.write(barsJson);
+            }
+
+            // Read the prediction output from the script
             try (var reader = new java.io.BufferedReader(new java.io.InputStreamReader(process.getInputStream()))) {
                 String output = reader.readLine();
-                logger.info("Model prediction output: {}", output); // Good for debugging
+                logger.info("Model prediction output: {}", output);
                 if (output != null && !output.isEmpty()) {
                     return Integer.parseInt(output.trim());
                 }
             }
+
         } catch (Exception e) {
             logger.error("Failed to get prediction from model", e);
         }
@@ -470,7 +496,7 @@ public class TradingService {
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class AlpacaStockBarsResponse {
-        private List<AlpacaStockBar> bars;
+        private Map<String, List<AlpacaStockBar>> bars; // <-- Changed to a Map
         @JsonProperty("next_page_token")
         private String nextPageToken;
     }
@@ -490,6 +516,15 @@ public class TradingService {
         private double close;
         @JsonProperty("v") // Volume
         private long volume;
+
+        public AlpacaStockBar(String timestamp, double open, double high, double low, double close, long volume) {
+            this.timestamp = timestamp;
+            this.open = open;
+            this.high = high;
+            this.low = low;
+            this.close = close;
+            this.volume = volume;
+        }
     }
 
     @Data

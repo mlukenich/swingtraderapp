@@ -31,4 +31,11 @@ public class ApiController {
     public List<String> getActivityLog() {
         return tradingService.getActivityLog();
     }
+
+    @GetMapping("/runscan")
+    public String runScan() {
+        // Run the service method in a new thread so the web request returns immediately
+        new Thread(tradingService::performDailyScan).start();
+        return "Manual scan triggered. Check your application console for logs.";
+    }
 }
