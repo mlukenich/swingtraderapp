@@ -1,16 +1,18 @@
-2025-08-31 15:42:25.064 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 23.0.2 with PID 38088 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:42:25.071 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:42:25.613 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:42:25.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
-2025-08-31 15:42:26.010 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:42:26.055 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:42:26.078 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:42:26.344 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:42:26.369 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:42:26.517 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:42:26.518 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:42:26.537 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:42:26.553 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-09-01 13:44:30.183 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 23.0.2 with PID 46544 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
+2025-09-01 13:44:30.187 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-01 13:44:30.188 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-01 13:44:30.213 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@697446d4
+2025-09-01 13:44:30.681 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-01 13:44:30.718 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2025-09-01 13:44:31.094 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-01 13:44:31.144 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-01 13:44:31.169 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-01 13:44:31.391 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-01 13:44:31.431 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-01 13:44:31.567 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
+2025-09-01 13:44:31.568 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-01 13:44:31.582 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-01 13:44:31.596 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -18,28 +20,41 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-31 15:42:27.070 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:42:27.101 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:42:27.628 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:42:27.954 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:42:28.015 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:42:28.150 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.305 seconds (process running for 4.547)
-2025-08-31 15:42:28.482 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:42:28.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:42:28.487 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 15:48:11.127 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 23.0.2 with PID 33112 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:48:11.127 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:48:11.611 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:48:11.655 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
-2025-08-31 15:48:12.034 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:48:12.080 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:48:12.106 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:48:12.388 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:48:12.418 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:48:12.554 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:48:12.555 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:48:12.568 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:48:12.585 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-09-01 13:44:32.072 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-01 13:44:32.098 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-01 13:44:32.548 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-01 13:44:32.613 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2025-09-01 13:44:32.742 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-01 13:44:32.776 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-01 13:44:32.848 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-01 13:44:32.882 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
+2025-09-01 13:44:32.969 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-01 13:44:33.114 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.122 seconds (process running for 4.318)
+2025-09-01 13:44:33.455 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@697446d4, started on Mon Sep 01 13:44:30 EDT 2025
+2025-09-01 13:44:33.456 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-01 13:44:33.457 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-01 13:44:33.459 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-01 13:44:54.929 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 23.0.2 with PID 46668 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
+2025-09-01 13:44:54.930 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-09-01 13:44:54.930 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-01 13:44:54.959 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-01 13:44:54.959 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-01 13:44:55.395 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-01 13:44:55.472 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2025-09-01 13:44:56.158 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-09-01 13:44:56.175 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-01 13:44:56.176 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-01 13:44:56.242 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-01 13:44:56.244 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1284 ms
+2025-09-01 13:44:56.448 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-01 13:44:56.483 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-01 13:44:56.498 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-01 13:44:56.765 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-01 13:44:56.813 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-01 13:44:56.922 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
+2025-09-01 13:44:56.924 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-01 13:44:56.936 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-01 13:44:56.948 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -47,1130 +62,180 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-31 15:48:13.086 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:48:13.115 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:48:13.590 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:48:13.924 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:48:14.032 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:48:14.161 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.229 seconds (process running for 3.929)
-2025-08-31 15:48:14.596 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:48:14.596 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:48:14.596 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 15:53:36.986 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 23.0.2 with PID 42956 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:53:36.987 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:53:37.529 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:53:37.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
-2025-08-31 15:53:37.983 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:53:38.040 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:53:38.065 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:53:38.353 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:53:38.386 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:53:38.534 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:53:38.536 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:53:38.551 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:53:38.568 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 15:53:39.036 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:53:39.064 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:53:39.536 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:53:39.856 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:53:39.930 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:53:40.052 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.287 seconds (process running for 4.021)
-2025-08-31 15:53:40.392 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:53:40.395 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:53:40.396 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 15:54:52.493 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 38236 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:54:52.494 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:54:52.519 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 15:54:52.519 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 15:54:52.920 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:54:52.969 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
-2025-08-31 15:54:53.477 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2025-08-31 15:54:53.485 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 15:54:53.486 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 15:54:53.508 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 15:54:53.509 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 989 ms
-2025-08-31 15:54:53.595 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:54:53.629 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:54:53.655 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:54:53.847 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:54:53.884 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:54:54.038 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:54:54.039 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:54:54.055 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:54:54.074 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 15:54:54.613 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:54:54.647 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:54:54.837 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:54:55.044 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:54:55.088 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:54:55.175 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 15:54:55.191 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-08-31 15:54:55.192 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:54:55.195 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:54:55.202 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 15:54:55.211 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-08-31 15:54:55.222 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8081 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
-
-2025-08-31 15:56:35.037 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 39100 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:56:35.038 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:56:35.460 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:56:35.507 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
-2025-08-31 15:56:35.890 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:56:35.939 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:56:35.961 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:56:36.230 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:56:36.258 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:56:36.407 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:56:36.409 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:56:36.421 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:56:36.434 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 15:56:36.887 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:56:36.915 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:56:37.368 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:56:37.693 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:56:37.789 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:56:37.915 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.077 seconds (process running for 3.661)
-2025-08-31 15:56:38.176 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:56:38.177 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:56:38.179 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 15:56:42.935 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 17196 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 15:56:42.937 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 15:56:42.961 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 15:56:42.962 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 15:56:43.414 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 15:56:43.447 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
-2025-08-31 15:56:44.034 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 15:56:44.042 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 15:56:44.042 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 15:56:44.067 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 15:56:44.067 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1105 ms
-2025-08-31 15:56:44.165 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 15:56:44.194 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 15:56:44.209 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 15:56:44.336 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 15:56:44.350 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 15:56:44.465 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 15:56:44.466 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 15:56:44.477 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 15:56:44.488 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 15:56:45.037 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 15:56:45.063 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:56:45.241 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 15:56:45.393 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 15:56:45.436 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 15:56:45.518 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 15:56:45.537 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 15:56:45.545 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.859 seconds (process running for 3.06)
-2025-08-31 15:58:12.126 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 15:58:12.143 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 15:58:12.149 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 15:58:12.153 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 15:58:12.155 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:43:23.649 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 44628 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:43:23.650 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:43:24.111 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:43:24.156 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
-2025-08-31 18:43:24.577 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:43:24.622 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:43:24.648 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:43:24.917 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:43:24.951 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:43:25.096 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:43:25.098 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:43:25.110 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:43:25.125 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:43:25.577 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:43:25.606 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:43:25.981 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:43:26.262 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:43:26.348 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:43:26.479 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.038 seconds (process running for 3.654)
-2025-08-31 18:43:26.742 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:43:26.744 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:43:26.746 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:43:32.479 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 43292 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:43:32.481 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:43:32.511 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 18:43:32.511 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 18:43:32.851 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:43:32.882 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
-2025-08-31 18:43:33.172 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 18:43:33.181 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 18:43:33.182 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 18:43:33.209 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 18:43:33.210 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 699 ms
-2025-08-31 18:43:33.303 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:43:33.332 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:43:33.350 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:43:33.482 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:43:33.498 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:43:33.624 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:43:33.625 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:43:33.638 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:43:33.649 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:43:34.162 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:43:34.187 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:43:34.369 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:43:34.538 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:43:34.594 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:43:34.680 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 18:43:34.698 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 18:43:34.705 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.455 seconds (process running for 2.664)
-2025-08-31 18:43:50.740 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 18:43:50.741 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 18:43:50.742 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-08-31 18:44:02.261 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 18:44:02.295 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 18:44:02.296 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 18:44:02.300 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for SPY...
-2025-08-31 18:44:02.563 [Thread-8] ERROR c.a.s.service.TradingService - Error fetching historical data for SPY: Error while extracting response for type [class com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse] and content type [application/json]
-2025-08-31 18:44:02.564 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 18:44:02.566 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for QQQ...
-2025-08-31 18:44:02.587 [Thread-8] ERROR c.a.s.service.TradingService - Error fetching historical data for QQQ: Error while extracting response for type [class com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse] and content type [application/json]
-2025-08-31 18:44:02.587 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 18:44:02.589 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for AAPL...
-2025-08-31 18:44:02.608 [Thread-8] ERROR c.a.s.service.TradingService - Error fetching historical data for AAPL: Error while extracting response for type [class com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse] and content type [application/json]
-2025-08-31 18:44:02.608 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 18:44:02.610 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for MSFT...
-2025-08-31 18:44:02.629 [Thread-8] ERROR c.a.s.service.TradingService - Error fetching historical data for MSFT: Error while extracting response for type [class com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse] and content type [application/json]
-2025-08-31 18:44:02.629 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 18:44:02.632 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for GOOG...
-2025-08-31 18:44:02.651 [Thread-8] ERROR c.a.s.service.TradingService - Error fetching historical data for GOOG: Error while extracting response for type [class com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse] and content type [application/json]
-2025-08-31 18:44:02.652 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 18:44:02.652 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 18:46:25.352 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 18:46:25.367 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 18:46:25.372 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:46:25.374 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:46:25.375 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:46:35.633 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 41972 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:46:35.634 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:46:36.080 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:46:36.117 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
-2025-08-31 18:46:36.465 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:46:36.512 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:46:36.539 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:46:36.766 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:46:36.798 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:46:36.939 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:46:36.940 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:46:36.953 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:46:36.964 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:46:37.497 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:46:37.538 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:46:37.926 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:46:38.208 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:46:38.290 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:46:38.416 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 2.981 seconds (process running for 3.579)
-2025-08-31 18:46:38.712 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:46:38.713 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:46:38.714 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:46:43.360 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 38624 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:46:43.361 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:46:43.385 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 18:46:43.385 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 18:46:43.712 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:46:43.739 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
-2025-08-31 18:46:44.011 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 18:46:44.017 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 18:46:44.018 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 18:46:44.043 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 18:46:44.043 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 658 ms
-2025-08-31 18:46:44.144 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:46:44.167 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:46:44.191 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:46:44.322 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:46:44.336 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:46:44.451 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:46:44.452 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:46:44.464 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:46:44.474 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:46:44.874 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:46:44.899 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:46:45.063 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:46:45.210 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:46:45.259 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:46:45.361 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 18:46:45.381 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 18:46:45.387 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.286 seconds (process running for 2.51)
-2025-08-31 18:46:45.425 [http-nio-8082-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 18:46:45.425 [http-nio-8082-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 18:46:45.426 [http-nio-8082-exec-9] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-08-31 18:47:09.836 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 18:47:09.872 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 18:47:09.873 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 18:47:09.875 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for SPY...
-2025-08-31 18:47:34.928 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 18:47:34.935 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 18:47:34.938 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:47:34.939 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:47:34.940 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:51:34.183 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 38652 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:51:34.185 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:51:34.668 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:51:34.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
-2025-08-31 18:51:35.115 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:51:35.172 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:51:35.197 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:51:35.469 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:51:35.508 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:51:35.677 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:51:35.679 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:51:35.693 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:51:35.708 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:51:36.194 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:51:36.224 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:51:36.634 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:51:37.003 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:51:37.120 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:51:37.264 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.296 seconds (process running for 3.932)
-2025-08-31 18:51:37.519 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:51:37.520 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:51:37.521 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:51:44.232 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 28164 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:51:44.234 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:51:44.260 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 18:51:44.260 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 18:51:44.715 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:51:44.760 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
-2025-08-31 18:51:45.180 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 18:51:45.190 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 18:51:45.191 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 18:51:45.232 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 18:51:45.232 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 972 ms
-2025-08-31 18:51:45.362 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:51:45.399 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:51:45.417 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:51:45.615 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:51:45.646 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:51:45.787 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:51:45.789 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:51:45.800 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:51:45.811 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:51:46.374 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:51:46.399 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:51:46.735 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:51:46.971 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:51:47.057 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:51:47.190 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 18:51:47.225 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 18:51:47.238 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 3.348 seconds (process running for 3.551)
-2025-08-31 18:51:52.709 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 18:51:52.709 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 18:51:52.710 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-08-31 18:51:52.731 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 18:51:52.826 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 18:51:52.826 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 18:51:52.829 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for SPY...
-2025-08-31 18:51:53.111 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 18:51:53.113 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for QQQ...
-2025-08-31 18:51:53.134 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 18:51:53.136 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for AAPL...
-2025-08-31 18:51:53.158 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 18:51:53.160 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for MSFT...
-2025-08-31 18:51:53.182 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 18:51:53.185 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for GOOG...
-2025-08-31 18:51:53.204 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 18:51:53.205 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 18:53:31.879 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 18:53:31.896 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 18:53:31.899 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:53:31.901 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:53:31.902 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:53:40.450 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 44536 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:53:40.450 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 18:53:40.451 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:53:40.471 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@48e7b3d2
-2025-08-31 18:53:40.929 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:53:40.969 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
-2025-08-31 18:53:41.371 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:53:41.415 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:53:41.438 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:53:41.692 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:53:41.727 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:53:41.883 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:53:41.884 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:53:41.896 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:53:41.908 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:53:42.499 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:53:42.592 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:53:43.021 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:53:43.092 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 18:53:43.222 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 18:53:43.251 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 18:53:43.331 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 18:53:43.365 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:53:43.444 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:53:43.603 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.37 seconds (process running for 3.999)
-2025-08-31 18:53:43.966 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@48e7b3d2, started on Sun Aug 31 18:53:40 EDT 2025
-2025-08-31 18:53:43.969 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:53:43.971 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:53:43.972 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:53:48.528 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 43320 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:53:48.528 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 18:53:48.529 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:53:48.552 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 18:53:48.552 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 18:53:48.896 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:53:48.928 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
-2025-08-31 18:53:49.226 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 18:53:49.235 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 18:53:49.236 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 18:53:49.262 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 18:53:49.263 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 710 ms
-2025-08-31 18:53:49.367 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:53:49.391 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:53:49.407 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:53:49.543 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:53:49.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:53:49.678 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:53:49.680 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:53:49.694 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:53:49.705 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:53:50.114 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:53:50.144 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:53:50.380 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:53:50.428 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 18:53:50.481 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 18:53:50.497 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 18:53:50.533 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 18:53:50.545 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:53:50.590 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:53:50.670 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 18:53:50.686 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 18:53:50.693 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.408 seconds (process running for 2.626)
-2025-08-31 18:53:52.861 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 18:53:52.861 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 18:53:52.862 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 18:53:52.862 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 18:53:52.862 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 18:53:52.863 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1758138c
-2025-08-31 18:53:52.863 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a8e7b94
-2025-08-31 18:53:52.864 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 18:53:52.864 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-08-31 18:53:52.879 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan", parameters={}
-2025-08-31 18:53:52.884 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 18:53:52.895 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 18:53:52.906 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 18:53:52.907 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 18:53:52.912 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 18:53:52.990 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 18:53:52.990 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 18:53:52.993 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for SPY...
-2025-08-31 18:53:53.056 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=SPY&timeframe=1Day&limit=60
-2025-08-31 18:53:53.093 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-08-31 18:53:53.258 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:53:53.260 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse]
-2025-08-31 18:53:53.280 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 18:53:53.282 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for QQQ...
-2025-08-31 18:53:53.283 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=QQQ&timeframe=1Day&limit=60
-2025-08-31 18:53:53.283 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-08-31 18:53:53.304 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:53:53.304 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse]
-2025-08-31 18:53:53.304 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 18:53:53.307 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for AAPL...
-2025-08-31 18:53:53.307 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=AAPL&timeframe=1Day&limit=60
-2025-08-31 18:53:53.307 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-08-31 18:53:53.326 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:53:53.327 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse]
-2025-08-31 18:53:53.327 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 18:53:53.328 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for MSFT...
-2025-08-31 18:53:53.330 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=MSFT&timeframe=1Day&limit=60
-2025-08-31 18:53:53.331 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-08-31 18:53:53.352 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:53:53.355 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse]
-2025-08-31 18:53:53.356 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 18:53:53.357 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for GOOG...
-2025-08-31 18:53:53.358 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=GOOG&timeframe=1Day&limit=60
-2025-08-31 18:53:53.358 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
-2025-08-31 18:53:53.378 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:53:53.379 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [com.app.swingtrader.service.TradingService$AlpacaStockBarsResponse]
-2025-08-31 18:53:53.380 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 18:53:53.380 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 18:55:38.689 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 18:55:38.710 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 18:55:38.713 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:55:38.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:55:38.716 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:55:47.388 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 38748 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:55:47.389 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 18:55:47.389 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:55:47.406 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@48e7b3d2
-2025-08-31 18:55:47.855 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:55:47.894 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
-2025-08-31 18:55:48.284 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:55:48.326 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:55:48.352 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:55:48.597 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:55:48.628 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:55:48.772 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:55:48.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:55:48.787 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:55:48.799 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:55:49.279 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:55:49.315 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:55:49.687 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:55:49.752 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 18:55:49.847 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 18:55:49.870 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 18:55:49.935 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 18:55:49.965 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:55:50.044 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:55:50.194 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.007 seconds (process running for 3.614)
-2025-08-31 18:55:50.494 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@48e7b3d2, started on Sun Aug 31 18:55:47 EDT 2025
-2025-08-31 18:55:50.496 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:55:50.497 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:55:50.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 18:55:55.403 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 4972 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 18:55:55.404 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 18:55:55.405 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 18:55:55.429 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 18:55:55.429 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 18:55:55.760 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 18:55:55.798 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
-2025-08-31 18:55:56.104 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 18:55:56.113 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 18:55:56.113 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 18:55:56.137 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 18:55:56.138 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 709 ms
-2025-08-31 18:55:56.237 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 18:55:56.261 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 18:55:56.279 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 18:55:56.422 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 18:55:56.438 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 18:55:56.565 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 18:55:56.566 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 18:55:56.580 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 18:55:56.591 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 18:55:56.972 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 18:55:57.011 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:55:57.200 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 18:55:57.241 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 18:55:57.278 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 18:55:57.291 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 18:55:57.325 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 18:55:57.338 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 18:55:57.383 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 18:55:57.464 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 18:55:57.480 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 18:55:57.486 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.325 seconds (process running for 2.529)
-2025-08-31 18:56:28.068 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 18:56:28.069 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 18:56:28.069 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 18:56:28.070 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 18:56:28.070 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 18:56:28.071 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57674c2e
-2025-08-31 18:56:28.071 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3da52633
-2025-08-31 18:56:28.071 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 18:56:28.072 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-08-31 18:56:28.085 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan", parameters={}
-2025-08-31 18:56:28.087 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 18:56:28.093 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 18:56:28.102 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 18:56:28.103 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 18:56:28.107 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 18:56:28.184 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 18:56:28.185 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 18:56:28.187 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for SPY...
-2025-08-31 18:56:28.256 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=SPY&timeframe=1Day&limit=60
-2025-08-31 18:56:28.261 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-2025-08-31 18:56:28.436 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:56:28.436 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
-2025-08-31 18:56:28.440 [Thread-8] DEBUG c.a.s.service.TradingService - Alpaca Response Body for SPY: {"bars":{},"next_page_token":null}
-2025-08-31 18:56:28.474 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 18:56:28.476 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for QQQ...
-2025-08-31 18:56:28.476 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=QQQ&timeframe=1Day&limit=60
-2025-08-31 18:56:28.477 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-2025-08-31 18:56:28.496 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:56:28.497 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
-2025-08-31 18:56:28.497 [Thread-8] DEBUG c.a.s.service.TradingService - Alpaca Response Body for QQQ: {"bars":{},"next_page_token":null}
-2025-08-31 18:56:28.499 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 18:56:28.500 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for AAPL...
-2025-08-31 18:56:28.501 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=AAPL&timeframe=1Day&limit=60
-2025-08-31 18:56:28.501 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-2025-08-31 18:56:28.521 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:56:28.522 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
-2025-08-31 18:56:28.522 [Thread-8] DEBUG c.a.s.service.TradingService - Alpaca Response Body for AAPL: {"bars":{},"next_page_token":null}
-2025-08-31 18:56:28.524 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 18:56:28.527 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for MSFT...
-2025-08-31 18:56:28.528 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=MSFT&timeframe=1Day&limit=60
-2025-08-31 18:56:28.528 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-2025-08-31 18:56:28.547 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:56:28.549 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
-2025-08-31 18:56:28.550 [Thread-8] DEBUG c.a.s.service.TradingService - Alpaca Response Body for MSFT: {"bars":{},"next_page_token":null}
-2025-08-31 18:56:28.553 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 18:56:28.555 [Thread-8] INFO  c.a.s.service.TradingService - Fetching 60 daily bars for GOOG...
-2025-08-31 18:56:28.556 [Thread-8] DEBUG o.s.web.client.RestTemplate - HTTP GET https://data.alpaca.markets/v2/stocks/bars?symbols=GOOG&timeframe=1Day&limit=60
-2025-08-31 18:56:28.556 [Thread-8] DEBUG o.s.web.client.RestTemplate - Accept=[text/plain, application/json, application/*+json, */*]
-2025-08-31 18:56:28.578 [Thread-8] DEBUG o.s.web.client.RestTemplate - Response 200 OK
-2025-08-31 18:56:28.579 [Thread-8] DEBUG o.s.web.client.RestTemplate - Reading to [java.lang.String] as "application/json"
-2025-08-31 18:56:28.580 [Thread-8] DEBUG c.a.s.service.TradingService - Alpaca Response Body for GOOG: {"bars":{},"next_page_token":null}
-2025-08-31 18:56:28.583 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 18:56:28.583 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 18:57:55.488 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 18:57:55.494 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 18:57:55.496 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 18:57:55.498 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 18:57:55.499 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:00:27.127 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 28316 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:00:27.128 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:00:27.129 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:00:27.148 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@110844f6
-2025-08-31 19:00:27.572 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:00:27.611 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
-2025-08-31 19:00:27.990 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:00:28.029 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:00:28.058 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:00:28.300 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:00:28.334 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:00:28.482 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:00:28.484 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:00:28.498 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:00:28.513 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:00:28.973 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:00:29.016 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:00:29.426 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:00:29.492 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:00:29.592 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:00:29.614 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:00:29.673 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:00:29.705 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:00:29.804 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:00:29.936 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.013 seconds (process running for 3.613)
-2025-08-31 19:00:30.215 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@110844f6, started on Sun Aug 31 19:00:27 EDT 2025
-2025-08-31 19:00:30.218 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:00:30.219 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:00:30.220 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:00:35.065 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 39984 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:00:35.067 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:00:35.067 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:00:35.092 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 19:00:35.092 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 19:00:35.459 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:00:35.492 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
-2025-08-31 19:00:36.003 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 19:00:36.022 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 19:00:36.022 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 19:00:36.052 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 19:00:36.053 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 960 ms
-2025-08-31 19:00:36.164 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:00:36.193 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:00:36.213 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:00:36.398 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:00:36.413 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:00:36.539 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:00:36.540 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:00:36.558 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:00:36.579 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:00:37.138 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:00:37.191 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:00:37.515 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:00:37.569 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:00:37.620 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:00:37.641 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:00:37.689 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:00:37.708 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:00:37.821 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:00:37.981 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 19:00:38.017 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 19:00:38.030 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 3.217 seconds (process running for 3.435)
-2025-08-31 19:00:46.388 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 19:00:46.389 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 19:00:46.389 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 19:00:46.389 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 19:00:46.390 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 19:00:46.390 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48af8cd5
-2025-08-31 19:00:46.391 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6e0b54f3
-2025-08-31 19:00:46.392 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 19:00:46.392 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-08-31 19:00:51.788 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan?continue", parameters={masked}
-2025-08-31 19:00:51.788 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 19:00:51.795 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 19:00:51.802 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 19:00:51.804 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 19:00:51.807 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 19:00:51.890 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 19:00:51.891 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 19:00:51.893 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for SPY from local CSV file...
-2025-08-31 19:00:51.895 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for SPY: ..\swing-trader-ml\data\raw\SPY.csv (The system cannot find the path specified)
-2025-08-31 19:00:51.895 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 19:00:51.896 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for QQQ from local CSV file...
-2025-08-31 19:00:51.896 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for QQQ: ..\swing-trader-ml\data\raw\QQQ.csv (The system cannot find the path specified)
-2025-08-31 19:00:51.896 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 19:00:51.897 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for AAPL from local CSV file...
-2025-08-31 19:00:51.898 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for AAPL: ..\swing-trader-ml\data\raw\AAPL.csv (The system cannot find the path specified)
-2025-08-31 19:00:51.898 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 19:00:51.899 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for MSFT from local CSV file...
-2025-08-31 19:00:51.899 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for MSFT: ..\swing-trader-ml\data\raw\MSFT.csv (The system cannot find the path specified)
-2025-08-31 19:00:51.899 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 19:00:51.900 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for GOOG from local CSV file...
-2025-08-31 19:00:51.900 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for GOOG: ..\swing-trader-ml\data\raw\GOOG.csv (The system cannot find the path specified)
-2025-08-31 19:00:51.901 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 19:00:51.901 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 19:01:31.547 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 19:01:31.561 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 19:01:31.564 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:01:31.567 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:01:31.568 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:01:41.112 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 38964 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:01:41.113 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:01:41.114 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:01:41.131 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@110844f6
-2025-08-31 19:01:41.574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:01:41.617 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
-2025-08-31 19:01:41.983 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:01:42.024 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:01:42.052 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:01:42.290 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:01:42.322 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:01:42.460 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:01:42.462 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:01:42.476 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:01:42.489 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:01:43.009 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:01:43.035 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:01:43.461 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:01:43.533 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:01:43.677 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:01:43.710 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:01:43.791 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:01:43.827 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:01:43.915 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:01:44.047 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.139 seconds (process running for 3.755)
-2025-08-31 19:01:44.330 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@110844f6, started on Sun Aug 31 19:01:41 EDT 2025
-2025-08-31 19:01:44.335 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:01:44.336 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:01:44.338 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:01:49.213 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 37956 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:01:49.214 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:01:49.215 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:01:49.237 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 19:01:49.238 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 19:01:49.663 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:01:49.691 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
-2025-08-31 19:01:50.052 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 19:01:50.060 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 19:01:50.060 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 19:01:50.083 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 19:01:50.084 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 846 ms
-2025-08-31 19:01:50.182 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:01:50.204 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:01:50.219 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:01:50.370 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:01:50.383 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:01:50.511 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:01:50.512 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:01:50.524 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:01:50.538 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:01:50.947 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:01:50.970 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:01:51.169 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:01:51.226 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:01:51.280 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:01:51.293 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:01:51.334 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:01:51.355 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:01:51.429 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:01:51.523 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 19:01:51.553 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 19:01:51.564 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.794 seconds (process running for 3.032)
-2025-08-31 19:01:56.842 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 19:01:56.842 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 19:01:56.843 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 19:01:56.843 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 19:01:56.843 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 19:01:56.844 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3524c6bb
-2025-08-31 19:01:56.845 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@66a23421
-2025-08-31 19:01:56.846 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 19:01:56.846 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
-2025-08-31 19:01:56.864 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan?continue", parameters={masked}
-2025-08-31 19:01:56.869 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 19:01:56.878 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 19:01:56.886 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 19:01:56.886 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 19:01:56.889 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 19:01:56.974 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 19:01:56.975 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 19:01:56.978 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for SPY from local CSV file...
-2025-08-31 19:01:56.982 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for SPY: Mapping for Date not found, expected one of [Price, Close, High, Low, Open, Volume]
-2025-08-31 19:01:56.983 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 19:01:56.984 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for QQQ from local CSV file...
-2025-08-31 19:01:56.984 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for QQQ: ..\swing-trader-ml\data\QQQ.csv (The system cannot find the file specified)
-2025-08-31 19:01:56.984 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 19:01:56.985 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for AAPL from local CSV file...
-2025-08-31 19:01:56.985 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for AAPL: Mapping for Date not found, expected one of [Price, Close, High, Low, Open, Volume]
-2025-08-31 19:01:56.986 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 19:01:56.986 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for MSFT from local CSV file...
-2025-08-31 19:01:56.987 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for MSFT: Mapping for Date not found, expected one of [Price, Close, High, Low, Open, Volume]
-2025-08-31 19:01:56.987 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 19:01:56.988 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for GOOG from local CSV file...
-2025-08-31 19:01:56.988 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for GOOG: ..\swing-trader-ml\data\GOOG.csv (The system cannot find the file specified)
-2025-08-31 19:01:56.988 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 19:01:56.989 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 19:05:20.145 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 19:05:20.157 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 19:05:20.161 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:05:20.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:05:20.164 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:05:30.098 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 44740 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:05:30.099 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:05:30.099 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:05:30.117 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@110844f6
-2025-08-31 19:05:30.545 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:05:30.582 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
-2025-08-31 19:05:30.958 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:05:31.001 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:05:31.029 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:05:31.275 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:05:31.308 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:05:31.472 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:05:31.473 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:05:31.485 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:05:31.499 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:05:32.064 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:05:32.090 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:05:32.515 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:05:32.571 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:05:32.709 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:05:32.745 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:05:32.812 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:05:32.840 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:05:32.916 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:05:33.046 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.158 seconds (process running for 3.763)
-2025-08-31 19:05:33.340 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@110844f6, started on Sun Aug 31 19:05:30 EDT 2025
-2025-08-31 19:05:33.343 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:05:33.344 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:05:33.345 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:05:38.098 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 38236 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:05:38.100 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:05:38.100 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:05:38.126 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 19:05:38.126 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 19:05:38.459 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:05:38.488 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
-2025-08-31 19:05:38.765 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 19:05:38.773 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 19:05:38.774 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 19:05:38.799 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 19:05:38.800 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 673 ms
-2025-08-31 19:05:38.913 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:05:38.936 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:05:38.954 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:05:39.086 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:05:39.102 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:05:39.222 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:05:39.223 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:05:39.235 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:05:39.245 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:05:39.649 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:05:39.674 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:05:39.856 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:05:39.896 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:05:39.948 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:05:39.961 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:05:39.995 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:05:40.009 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:05:40.062 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:05:40.158 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 19:05:40.193 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 19:05:40.210 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.348 seconds (process running for 2.553)
-2025-08-31 19:05:46.612 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 19:05:46.612 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 19:05:46.612 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 19:05:46.613 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 19:05:46.613 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 19:05:46.614 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@215da5ab
-2025-08-31 19:05:46.616 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@10288d6e
-2025-08-31 19:05:46.616 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 19:05:46.617 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
-2025-08-31 19:05:46.641 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan?continue", parameters={masked}
-2025-08-31 19:05:46.642 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 19:05:46.652 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 19:05:46.659 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 19:05:46.660 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 19:05:46.664 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 19:05:46.741 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 19:05:46.741 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 19:05:46.744 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for SPY from local CSV file...
-2025-08-31 19:05:46.750 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for SPY: Text 'TickerT00:00:00Z' could not be parsed at index 0
-2025-08-31 19:05:46.750 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for SPY, skipping.
-2025-08-31 19:05:46.751 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for QQQ from local CSV file...
-2025-08-31 19:05:46.752 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for QQQ: ..\swing-trader-ml\data\QQQ.csv (The system cannot find the file specified)
-2025-08-31 19:05:46.752 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 19:05:46.753 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for AAPL from local CSV file...
-2025-08-31 19:05:46.753 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for AAPL: Text 'TickerT00:00:00Z' could not be parsed at index 0
-2025-08-31 19:05:46.753 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for AAPL, skipping.
-2025-08-31 19:05:46.754 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for MSFT from local CSV file...
-2025-08-31 19:05:46.755 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for MSFT: Text 'TickerT00:00:00Z' could not be parsed at index 0
-2025-08-31 19:05:46.755 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for MSFT, skipping.
-2025-08-31 19:05:46.756 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for GOOG from local CSV file...
-2025-08-31 19:05:46.756 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for GOOG: ..\swing-trader-ml\data\GOOG.csv (The system cannot find the file specified)
-2025-08-31 19:05:46.756 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 19:05:46.756 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 19:07:24.444 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 19:07:24.464 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 19:07:24.467 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:07:24.470 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:07:24.472 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:07:34.710 [main] INFO  c.a.s.SwingTraderApplicationTests - Starting SwingTraderApplicationTests using Java 21.0.7 with PID 40580 (started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:07:34.710 [main] DEBUG c.a.s.SwingTraderApplicationTests - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:07:34.711 [main] INFO  c.a.s.SwingTraderApplicationTests - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:07:34.729 [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@110844f6
-2025-08-31 19:07:35.174 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:07:35.212 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
-2025-08-31 19:07:35.587 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:07:35.635 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:07:35.659 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:07:35.913 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:07:35.945 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:07:36.094 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:07:36.096 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:07:36.109 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:07:36.120 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:07:36.606 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:07:36.634 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:07:37.001 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:07:37.068 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:07:37.164 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:07:37.191 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:07:37.272 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:07:37.307 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:07:37.402 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:07:37.530 [main] INFO  c.a.s.SwingTraderApplicationTests - Started SwingTraderApplicationTests in 3.024 seconds (process running for 3.62)
-2025-08-31 19:07:37.866 [SpringApplicationShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@110844f6, started on Sun Aug 31 19:07:34 EDT 2025
-2025-08-31 19:07:37.869 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:07:37.871 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:07:37.872 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-08-31 19:07:54.892 [restartedMain] INFO  c.a.s.SwingTraderApplication - Starting SwingTraderApplication using Java 21.0.7 with PID 44112 (C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader\target\classes started by mluke in C:\Users\mluke\OneDrive\Documents\GitHub\swing-trader\swing-trader)
-2025-08-31 19:07:54.893 [restartedMain] DEBUG c.a.s.SwingTraderApplication - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-08-31 19:07:54.894 [restartedMain] INFO  c.a.s.SwingTraderApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-31 19:07:54.919 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-08-31 19:07:54.919 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-08-31 19:07:55.269 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-31 19:07:55.300 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
-2025-08-31 19:07:55.580 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-31 19:07:55.588 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-31 19:07:55.589 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-08-31 19:07:55.614 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-31 19:07:55.614 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 694 ms
-2025-08-31 19:07:55.709 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-31 19:07:55.739 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-08-31 19:07:55.754 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-08-31 19:07:55.881 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-31 19:07:55.897 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-08-31 19:07:56.019 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/swingtraderdb user=SA
-2025-08-31 19:07:56.020 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-08-31 19:07:56.031 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-31 19:07:56.043 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-08-31 19:07:56.438 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-31 19:07:56.466 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:07:56.670 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-31 19:07:56.715 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
-2025-08-31 19:07:56.776 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2025-08-31 19:07:56.807 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-31 19:07:56.851 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-31 19:07:56.865 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
-2025-08-31 19:07:56.934 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-08-31 19:07:57.010 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-08-31 19:07:57.026 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-31 19:07:57.034 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 2.391 seconds (process running for 2.613)
-2025-08-31 19:07:58.393 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-31 19:07:58.395 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-08-31 19:07:58.395 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-08-31 19:07:58.395 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-08-31 19:07:58.395 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-08-31 19:07:58.395 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@215da5ab
-2025-08-31 19:07:58.396 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@10288d6e
-2025-08-31 19:07:58.396 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-31 19:07:58.396 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-08-31 19:07:58.414 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan?continue", parameters={masked}
-2025-08-31 19:07:58.415 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
-2025-08-31 19:07:58.423 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-08-31] Starting Daily Trading Scan ---
-2025-08-31 19:07:58.431 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
-2025-08-31 19:07:58.432 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
-2025-08-31 19:07:58.435 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-08-31 19:07:58.513 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
-2025-08-31 19:07:58.514 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
-2025-08-31 19:07:58.517 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for SPY from local CSV file...
-2025-08-31 19:07:58.544 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for QQQ from local CSV file...
-2025-08-31 19:07:58.544 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for QQQ: ..\swing-trader-ml\data\QQQ.csv (The system cannot find the file specified)
-2025-08-31 19:07:58.544 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
-2025-08-31 19:07:58.547 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for AAPL from local CSV file...
-2025-08-31 19:07:58.555 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for MSFT from local CSV file...
-2025-08-31 19:07:58.564 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for GOOG from local CSV file...
-2025-08-31 19:07:58.564 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for GOOG: ..\swing-trader-ml\data\GOOG.csv (The system cannot find the file specified)
-2025-08-31 19:07:58.564 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
-2025-08-31 19:07:58.564 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
-2025-08-31 19:10:16.806 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-31 19:10:16.820 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-31 19:10:16.824 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-31 19:10:16.827 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-08-31 19:10:16.829 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-09-01 13:44:57.477 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-01 13:44:57.519 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-01 13:44:57.817 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-01 13:44:57.880 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 6 mappings in 'requestMappingHandlerMapping'
+2025-09-01 13:44:57.966 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-01 13:44:58.006 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-01 13:44:58.070 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-01 13:44:58.089 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/swingtraderdb'
+2025-09-01 13:44:58.156 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-01 13:44:58.242 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-01 13:44:58.264 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-09-01 13:44:58.270 [restartedMain] INFO  c.a.s.SwingTraderApplication - Started SwingTraderApplication in 3.736 seconds (process running for 4.034)
+2025-09-01 13:45:35.514 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@73ffea1b
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@29a267a2
+2025-09-01 13:45:35.515 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-01 13:45:35.516 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-09-01 13:45:39.135 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/?continue", parameters={masked}
+2025-09-01 13:45:39.135 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.WebController#dashboard(Model)
+2025-09-01 13:45:39.210 [http-nio-8082-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-09-01 13:45:39.317 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:39.410 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:45:39.410 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:45:39.410 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:45:39.410 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:45:39.419 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:39.419 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:39.420 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:39.420 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:39.427 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:39.429 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:53.062 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:45:53.063 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:45:53.065 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:53.065 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:53.065 [http-nio-8082-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:45:53.065 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:53.065 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:45:53.066 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:53.066 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:53.066 [http-nio-8082-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:59.529 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:45:59.529 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:45:59.529 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:45:59.529 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:45:59.530 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:59.530 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:59.530 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:45:59.531 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:45:59.531 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:45:59.531 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:09.496 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:46:09.496 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:46:09.496 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:46:09.496 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:46:09.497 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:09.497 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:09.497 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:09.498 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:09.498 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:09.498 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:19.501 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:46:19.501 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:46:19.502 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:46:19.502 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:46:19.502 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:19.502 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:19.502 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:19.503 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:19.503 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:19.503 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:23.353 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/runscan", parameters={}
+2025-09-01 13:46:23.353 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#runScan()
+2025-09-01 13:46:23.354 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [text/plain, */*, application/json, application/*+json]
+2025-09-01 13:46:23.354 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Manual scan triggered. Check your application console for logs."]
+2025-09-01 13:46:23.354 [Thread-8] INFO  c.a.s.service.TradingService - --- [2025-09-01] Starting Daily Trading Scan ---
+2025-09-01 13:46:23.355 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:23.377 [Thread-8] INFO  c.a.s.service.TradingService - Reviewing 0 open position(s)...
+2025-09-01 13:46:23.378 [Thread-8] INFO  c.a.s.service.TradingService - Scanning watchlist for new trades: [SPY, QQQ, AAPL, MSFT, GOOG]
+2025-09-01 13:46:23.380 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for SPY from local CSV file...
+2025-09-01 13:46:23.414 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for QQQ from local CSV file...
+2025-09-01 13:46:23.414 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for QQQ: ..\swing-trader-ml\data\QQQ.csv (The system cannot find the file specified)
+2025-09-01 13:46:23.414 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for QQQ, skipping.
+2025-09-01 13:46:23.415 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for AAPL from local CSV file...
+2025-09-01 13:46:23.423 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for MSFT from local CSV file...
+2025-09-01 13:46:23.432 [Thread-8] INFO  c.a.s.service.TradingService - Reading historical bars for GOOG from local CSV file...
+2025-09-01 13:46:23.432 [Thread-8] ERROR c.a.s.service.TradingService - Error reading CSV file for GOOG: ..\swing-trader-ml\data\GOOG.csv (The system cannot find the file specified)
+2025-09-01 13:46:23.432 [Thread-8] INFO  c.a.s.service.TradingService - Not enough historical data for GOOG, skipping.
+2025-09-01 13:46:23.432 [Thread-8] INFO  c.a.s.service.TradingService - --- Daily Trading Scan Complete ---
+2025-09-01 13:46:41.374 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/?continue", parameters={masked}
+2025-09-01 13:46:41.375 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.WebController#dashboard(Model)
+2025-09-01 13:46:41.377 [http-nio-8082-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-09-01 13:46:41.385 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:41.471 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:46:41.471 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:46:41.471 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:46:41.471 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:46:41.471 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:41.472 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:46:41.472 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:41.473 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:41.474 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:41.474 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:51.525 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:46:51.525 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:46:51.526 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:46:51.526 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:46:51.527 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:51.527 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:46:51.529 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:46:51.530 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:46:51.531 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:46:51.532 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:01.498 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:01.498 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:01.500 [http-nio-8082-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:01.501 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:01.503 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:01.503 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:01.503 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:01.505 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:01.506 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:01.507 [http-nio-8082-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:11.532 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:11.532 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:11.532 [http-nio-8082-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:11.532 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:11.533 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:11.533 [http-nio-8082-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:11.534 [http-nio-8082-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:11.534 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:11.534 [http-nio-8082-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:11.536 [http-nio-8082-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:21.597 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:21.598 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:21.598 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:21.598 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:21.598 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:21.598 [http-nio-8082-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:21.599 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:21.599 [http-nio-8082-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:21.599 [http-nio-8082-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:21.599 [http-nio-8082-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:31.594 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:31.594 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:31.594 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:31.594 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:31.595 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:31.595 [http-nio-8082-exec-9] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:31.595 [http-nio-8082-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:31.595 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:31.595 [http-nio-8082-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:31.597 [http-nio-8082-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:41.591 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:41.591 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:41.591 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:41.591 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:41.591 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:41.592 [http-nio-8082-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:41.592 [http-nio-8082-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:41.592 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:41.592 [http-nio-8082-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:41.592 [http-nio-8082-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:51.613 [http-nio-8082-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/activity", parameters={}
+2025-09-01 13:47:51.613 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/positions", parameters={}
+2025-09-01 13:47:51.613 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getOpenPositions()
+2025-09-01 13:47:51.613 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.app.swingtrader.controller.ApiController#getActivityLog()
+2025-09-01 13:47:51.613 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:51.613 [http-nio-8082-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[[13:46:23] --- Daily Trading Scan Complete ---, [13:46:23] Scanning watchlist for new trades: [SPY, (truncated)...]
+2025-09-01 13:47:51.614 [http-nio-8082-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-09-01 13:47:51.614 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-01 13:47:51.614 [http-nio-8082-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-09-01 13:47:51.614 [http-nio-8082-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK

@@ -334,7 +334,7 @@ public class TradingService {
         }
     }
 
-    private List<AlpacaStockBar> fetchHistoricalBars(String symbol, int limit) {
+    public List<AlpacaStockBar> fetchHistoricalBars(String symbol, int limit) {
         logger.info("Reading historical bars for {} from local CSV file...", symbol);
         List<AlpacaStockBar> bars = new ArrayList<>();
         String filePath = mlDataPath + "/" + symbol + ".csv";
@@ -503,7 +503,7 @@ public class TradingService {
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    private static class AlpacaStockBar {
+    public static class AlpacaStockBar {
         @JsonProperty("t") // Timestamp
         private String timestamp;
         @JsonProperty("o") // Open
